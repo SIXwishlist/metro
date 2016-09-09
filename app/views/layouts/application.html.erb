@@ -4,11 +4,38 @@
     <title>Metro</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="orangered" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">
+          <i class="fa fa-subway" aria-hidden="true"></i>
+          metro
+        </a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Login</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Alert Flashes -->
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+    </div>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
