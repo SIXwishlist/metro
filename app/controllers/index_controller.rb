@@ -1,4 +1,7 @@
 class IndexController < ApplicationController
-  def render_index
+  def index
+  end
+
+  def newsfeed
   end
 end
