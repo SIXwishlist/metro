@@ -3,5 +3,6 @@ class IndexController < ApplicationController
   end
 
   def newsfeed
+    
   end
 end
