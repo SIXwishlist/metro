@@ -1,24 +1,8 @@
-# README
+<img src="http://i.imgur.com/583gTgH.png" height=100>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+_connecting the world, one stop at a time_
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Quickstart
+To install metro, clone the repository and install required gems.
+`bundle install`
+Run metro using `rails server` or set up a `puma` deployment
