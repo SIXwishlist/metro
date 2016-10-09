@@ -1,0 +1,47 @@
+<div class="profile-wrap">
+  <div class="row">
+
+    <div class="col s12 m3 profile-card hoverable">
+      <div class="card grey darken-1 large">
+
+        <div class="card-image">
+          <% if @user.background_image.to_s.length > 0 %>
+            <img src="<%= @user.background_image %>">
+          <% else %>
+            <img src="/images/default_user_background.jpg">
+          <% end %>
+
+          <div class="card-title profile-name">
+            <% if @user.image.to_s.length > 0 %>
+              <img class="responsive-img profile-picture" src="<%= @user.image %>?height=90&width=90">
+            <% else %>
+              <img class="responsive-img profile-picture" src="https://www.gravatar.com/avatar/<%= @email_gravatar_hash %>?s=90">
+            <% end %>
+          </div>
+        </div>
+        <div class="card-content white-text">
+          <h5><%= @user.name %></h5>
+          <p>
+            <% if @user.about.to_s.length > 0 %>
+              <%= @user.about %>
+            <% else %>
+              This user doesn't seem to have a bio...
+            <% end %>
+          </p>
+        </div>
+        <div class="card-action">
+          <% if @user.id == current_user.id %>
+            <a href="#">Edit</a>
+          <% else %>
+            <a href="#">Follow</a>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m8 profile-feed">
+      <h3>No posts :(</h3>
+    </div>
+
+  </div>
+</div>

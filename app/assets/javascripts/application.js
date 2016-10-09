@@ -14,9 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
+/* global angular */
 
 // Initialise navbar
 $('.button-collapse').sideNav();
 // Initialise Angular app
-var metro = angular.module('metro',[]);
+var metro = angular.module('metro', []);

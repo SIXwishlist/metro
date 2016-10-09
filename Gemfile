@@ -19,6 +19,13 @@ gem 'omniauth-facebook'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 
+# Votes, comments, and followers
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'acts_as_commentable'
+gem "acts_as_follower"
+
+
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
