@@ -1,13 +1,19 @@
 <div class="row">
   <div class="col s12 m6">
-    <div class="card white lighten-4">
-      <div class="card-content black-text">
-        <span class="card-title">New Post</span>
-        <textarea placeholder="What's on your mind?" class="materialize-textarea"></textarea>
-      </div>
-      <div class="card-action">
-        <a href="#">Post</a>
-        <a href="#">Clear</a>
+    <div class="new-post-card-wrapper">
+      <div class="card white lighten-4">
+        <div class="card-content black-text new-post-content-wrapper">
+          <span class="card-title">New Post</span>
+          <textarea placeholder="What's on your mind?" class="materialize-textarea"></textarea>
+
+          <i class="fa fa-camera newsfeed-item-action tooltipped" data-tooltip="Add an image" aria-hidden="true"></i>
+          <i class="fa fa-map-marker newsfeed-item-action tooltipped" data-tooltip="Tag a location" aria-hidden="true"></i>
+          <i class="fa fa-user newsfeed-item-action tooltipped" data-tooltip="Tag a friend" aria-hidden="true"></i>
+        </div>
+        <div class="card-action">
+          <a href="#">Post</a>
+          <a href="#">Clear</a>
+        </div>
       </div>
     </div>
   </div>
